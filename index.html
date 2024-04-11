@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia Guadalajara</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Farmacia Guadalajara</h1>
+    <div class="table">
+        <table id="tableInventario">
+            <tr>
+              <th>Medicamento</th>
+              <th>Existencia (piezas)</th>
+              <th>Fecha de caducidad</th>
+            </tr>
+            <tr>
+              <td>Paracetamol</td>
+              <td><span id="paracetamol">54</span></td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Ibuprofeno</td>
+              <td><span id="iboprufeno">50</span></td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>Ambroxol</td>
+              <td><span id="ambroxol">39</span></td>
+              <td>2025</td>
+            </tr>
+            <tr>
+              <td>Naproxeno</td>
+              <td> <span id="naproxeno">10</span></td>
+              <td>2024</td>
+            </tr>
+          </table>
+    </div>
+    <div class="seccion">
+        <label for="medicamentos">Selecciona un medicamento:</label>
+        <select name="medicamentos" id="medicamentos">
+            <option value="paracetamol">Paracetamol</option>
+            <option value="iboprufeno">Ibuprofeno</option>
+            <option value="ambroxol">Ambroxol</option>
+            <option value="Naproxeno">Naproxeno</option>
+            
+        </select>
+        <label for="piezas">Cantidad de medicamentos a reabastecer: </label>
+        <input type="number" name="piezas" id="piezas" placeholder="Ingresa la cantidad a reabastecer">
+        <label for="fecha">Año actual:</label>
+        <input type="date" name="fecha" id="fecha" required>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

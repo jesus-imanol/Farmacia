@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background-image: radial-gradient(circle, #ffffff 0%, #f0f0f0 100%);
+    animation: gradientAnimation 20s infinite alternate;
+}
+
+.table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+
+#tableInventario {
+    width: 100%;
+}
+
+#tableInventario th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#tableInventario td, #tableInventario th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tableInventario tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tableInventario tr:hover {
+    background-color: #ddd;
+}
+
+#tableInventario td span {
+    font-weight: bold;
+}
+.seccion {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center; /* Para centrar el contenido */
+}
+
+/* Estilos para las etiquetas */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="date"],
+select {
+    margin: 0 auto;
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: calc(100% - 20px);
+    margin: 0 auto; 
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
