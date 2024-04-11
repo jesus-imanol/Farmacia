@@ -10,6 +10,11 @@ let medicamentos =[{medicamento:"Paracetamol",
 let valorBuscado;
 bubbleSort();
 function buscar(){
+    Swal.fire({
+        icon: "error",
+        title: "Advertencia",
+        text: "Debes de rellenar el medicamento" + medicamentos[4].medicamento,
+    });
     valorBuscado=parseInt(document.getElementById("anio").value);
 
     let resultado=busquedaBinaria();
@@ -18,6 +23,10 @@ function buscar(){
         console.log("Encontrado");
     else
         console.log("No encontrado");
+}
+function reabastecer(){
+    let cantidad= document.getElementById("piezas").value;
+
 }
 function bubbleSort() {
     const { length } = medicamentos; // obtiene el tamaño de la lista
